@@ -4,7 +4,7 @@
   "description": "",
   "main": "src/index.js",
   "scripts": {
-    "start": "watchify -t [ babelify --presets [ @babel/preset-env @babel/preset-react ] ] -e src/index.js -o dist/build.js"
+    "start": "watchify -t [ babelify --presets [ @babel/preset-env @babel/preset-react ] ] -t cssify -e src/index.js -o dist/build.js"
   },
   "keywords": [],
   "author": "",
@@ -22,6 +22,7 @@
     "@babel/preset-react": "^7.9.4",
     "babelify": "^10.0.0",
     "browserify": "^16.5.1",
+    "cssify": "^1.0.3",
     "envify": "^4.1.0",
     "reactify": "^1.1.1",
     "watchify": "^3.11.1"
